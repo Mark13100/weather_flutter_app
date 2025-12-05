@@ -1,16 +1,26 @@
-# weather_app
+# Weather Flutter App
 
-A new Flutter project.
+## How to run
+1. Clone the repository:
+   git clone https://github.com/Mark13100/weather_flutter_app.git
+2. Enter the project folder:
+   cd weather_flutter_app
+3. Get dependencies:
+   flutter pub get
+4. Run the app:
+   flutter run -d chrome   # For web
+   flutter run -d android  # For Android
 
-## Getting Started
+## API Key
+- Put your API key in `lib/services/api_service.dart` at the line:
+  const String apiKey = 'YOUR_API_KEY';
 
-This project is a starting point for a Flutter application.
+## APK
+- Android APK can be found at:
+  build/app/outputs/flutter-apk/app-release.apk
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Features
+- Search weather by city
+- View weather details
+- Save favorite cities
+- Settings page
